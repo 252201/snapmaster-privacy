@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SnapMaster 隐私政策 (Privacy Policy)</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #6366f1;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #a5b4fc, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .update-time {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 18px;
+      color: #e2e8f0;
+      margin: 28px 0 12px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    p, ul {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    strong { color: #f1f5f9; }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: rgba(99, 102, 241, 0.2);
+      color: #a5b4fc;
+      font-family: monospace;
+      font-size: 12px;
+    }
+    .contact-box {
+      margin-top: 32px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 10px;
+      border: 1px dashed var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SnapMaster 隐私政策 (Privacy Policy)</h1>
+    <div class="update-time">最后更新日期：2026年8月30日 | 生效版本：v1.0.0</div>
+
+    <p>感谢您使用 <strong>SnapMaster（专业网页截图与图像标注神器）</strong>。我们极其重视用户的个人隐私与数据安全。本隐私政策旨在向您说明我们在您使用 SnapMaster 扩展程序时对信息的处理方式。</p>
+
+    <h2>1. 100% 客户端本地运行承诺</h2>
+    <p>SnapMaster 的所有核心功能（包括网页截图捕获、自由矩形框选、DOM 元素吸附、整页滚动拼接、Canvas 矢量标注、局部马赛克模糊、macOS 窗口美化包装以及 PDF 转换导出）<strong>均完全在您本地浏览器的沙箱环境中执行</strong>。</p>
+    <p>我们<strong>绝不会</strong>将您的截图画面、页面文本内容、标注过程或浏览历史上传到任何远程服务器。</p>
+
+    <h2>2. 权限使用与透明度说明</h2>
+    <p>为了实现截图与图像处理功能，本插件申请了以下最小必要权限：</p>
+    <ul>
+      <li><span class="badge">activeTab / scripting</span>：仅在您主动触发截图（点击图标或快捷键）时，临时获取当前标签页画面并注入选区浮层。</li>
+      <li><span class="badge">storage / unlimitedStorage</span>：用于保存您的个性化偏好配置，并在您本地的 IndexedDB 中缓存历史快照，不产生任何外部传输。</li>
+      <li><span class="badge">downloads / clipboardWrite</span>：用于将您编辑完成的图片或 PDF 文件保存到本地下载目录，或写入系统剪贴板以便快捷粘贴。</li>
+      <li><span class="badge">host_permissions (&lt;all_urls&gt;)</span>：用于支持在普通网页上执行跨区域滚动长截图拼接与 DOM 元素精准吸附（受浏览器安全保护的特权页面除外）。</li>
+    </ul>
+
+    <h2>3. 账户与支付安全</h2>
+    <ul>
+      <li><strong>Google 身份登录</strong>：如您选择登录账号以同步会员权益，系统仅获取经您授权的 Google 基础资料（UID、邮箱地址与头像）用于鉴权与卡密兑换。</li>
+      <li><strong>Stripe 安全支付</strong>：会员购买全部通过全球领先的支付服务商 <strong>Stripe</strong> 官方加密收银台进行处理。SnapMaster 不会接触、处理或储存您的任何信用卡号或支付凭证。</li>
+    </ul>
+
+    <h2>4. 数据的控制与删除</h2>
+    <p>您拥有对自身数据的完全控制权。您可以随时在插件的“侧边栏画廊”或“偏好设置”中一键清空所有历史截图和本地缓存数据；在 Chrome 扩展管理页卸载本插件后，所有本地存储的数据将被彻底销毁。</p>
+
+    <div class="contact-box">
+      <h2>📬 联系我们</h2>
+      <p>如果您对本隐私政策有任何疑问、意见或反馈，请通过官方支持渠道与我们联系：</p>
+      <p>官方邮箱：<strong>support@snapmaster.app</strong></p>
+    </div>
+  </div>
+</body>
+</html>
