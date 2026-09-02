@@ -116,7 +116,7 @@
     </div>
 
     <h1>SnapMaster 隐私政策 (Privacy Policy)</h1>
-    <div class="update-time">最后更新日期：2026年9月1日 | 生效版本：v1.0.1</div>
+    <div class="update-time">最后更新日期：2026年9月2日 | 生效版本：v1.1.0</div>
 
     <p>感谢您使用 <strong>SnapMaster（专业网页截图与图像标注神器）</strong>。我们极其重视用户的个人隐私与数据安全。本隐私政策旨在向您说明我们在您使用 SnapMaster 扩展程序时对信息的处理方式。</p>
 
@@ -125,21 +125,31 @@
     <p>我们<strong>绝不会</strong>将您的截图画面、页面文本内容、标注过程或浏览历史上传到任何远程服务器。</p>
 
     <h2>2. 权限使用与透明度说明</h2>
-    <p>为了实现截图与图像处理功能，本插件申请了以下最小必要权限：</p>
+    <p>为了实现截图、标注与音频反馈功能，本插件申请了以下最小必要权限：</p>
     <ul>
       <li><span class="badge">activeTab / scripting</span>：仅在您主动触发截图（点击图标或快捷键）时，临时获取当前标签页画面并注入选区浮层。</li>
-      <li><span class="badge">storage / unlimitedStorage</span>：用于保存您的个性化偏好配置，并在您本地的 IndexedDB 中缓存历史快照，不产生任何外部传输。</li>
+      <li><span class="badge">storage / unlimitedStorage</span>：用于保存您的个性化偏好配置与 AI 设置，并在您本地的 IndexedDB 中缓存历史快照，不产生任何外部未经授权的传输。</li>
       <li><span class="badge">downloads / clipboardWrite</span>：用于将您编辑完成的图片或 PDF 文件保存到本地下载目录，或写入系统剪贴板以便快捷粘贴。</li>
-      <li><span class="badge">host_permissions (&lt;all_urls&gt;)</span>：用于支持在普通网页上执行跨区域滚动长截图拼接与 DOM 元素精准吸附（受浏览器安全保护的特权页面除外）。</li>
+      <li><span class="badge">sidePanel</span>：用于在 Chrome 侧边栏中提供截图历史画廊浏览与快速调入画板功能。</li>
+      <li><span class="badge">notifications</span>：用于在截图成功写入系统剪贴板或完成长图拼接时发送桌面提示。</li>
+      <li><span class="badge">offscreen</span>：用于在用户使用全局快捷键截图时通过 Manifest V3 离线音频通道播放快门音效反馈（AUDIO_PLAYBACK），不产生任何网络流量或数据传输。</li>
+      <li><span class="badge">host_permissions (&lt;all_urls&gt;)</span>：用于支持在普通网页上执行跨区域滚动长截图拼接、即时翻译选区与 DOM 元素精准吸附（受浏览器安全保护的特权页面除外）。</li>
     </ul>
 
-    <h2>3. 账户与支付安全</h2>
+    <h2>3. AI OCR 与即时翻译隐私安全 (BYOK 自带密钥机制)</h2>
+    <ul>
+      <li><strong>100% 本地存储 Key</strong>：您在设置中心配置的大模型 API 密钥（如 DeepSeek、OpenRouter、OpenAI 等）仅以加密形式保存在您本机的 <code>chrome.storage.local</code> 中。</li>
+      <li><strong>端到端直连官方 API</strong>：当您触发 OCR 提取或划选翻译时，由您的本地浏览器直接向您指定的目标 AI 服务商发起 HTTPS 请求，<strong>绝不经过、中转或上传至任何 SnapMaster 开发者自建服务器或第三方中间代理</strong>。</li>
+      <li><strong>零数据沉淀与落库</strong>：网页划选即时翻译产生的临时图文仅在浮窗中渲染，不记录进历史画廊数据库，用完即焚。</li>
+    </ul>
+
+    <h2>4. 账户与支付安全</h2>
     <ul>
       <li><strong>Google 身份登录</strong>：如您选择登录账号以同步会员权益，系统仅获取经您授权的 Google 基础资料（UID、邮箱地址与头像）用于鉴权与卡密兑换。</li>
       <li><strong>Stripe 安全支付</strong>：会员购买全部通过全球领先的支付服务商 <strong>Stripe</strong> 官方加密收银台进行处理。SnapMaster 不会接触、处理或储存您的任何信用卡号或支付凭证。</li>
     </ul>
 
-    <h2>4. 数据的控制与删除</h2>
+    <h2>5. 数据的控制与删除</h2>
     <p>您拥有对自身数据的完全控制权。您可以随时在插件的“侧边栏画廊”或“偏好设置”中一键清空所有历史截图和本地缓存数据；在 Chrome 扩展管理页卸载本插件后，所有本地存储的数据将被彻底销毁。</p>
 
     <div class="contact-box">
